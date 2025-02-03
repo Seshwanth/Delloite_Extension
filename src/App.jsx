@@ -66,19 +66,19 @@ function App() {
 
       <button
         onClick={handleScrape}
-        className="w-[60%] h-36 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 my-2"
+        className="w-[60%] h-96 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 my-2"
       >
         Scrape Emails
       </button>
 
       <button
         onClick={downloadJSON}
-        className="w-[60%] h-36 bg-green-500 text-white font-bold rounded-md hover:bg-green-700"
+        className="w-[60%] h-96 bg-green-500 text-white font-bold rounded-md hover:bg-green-700"
       >
         Download JSON
       </button>
 
-      {error && <p className="text-red-500 text-center mt-4">{error}</p>}
+      {error && <p className="text-red-500 text-center">{error}</p>}
 
       <ul className="mt-4 w-full overflow-y-auto h-64">
         {emails.map((email, index) => (
