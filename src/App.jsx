@@ -55,6 +55,11 @@ function App() {
           <img src={settingsIcon} alt="Settings" />
         </button>
       </header>
+      <img 
+        src="./Logz.png"
+        alt="EScraper Logo" 
+        className="w-16 h-16 mb-2"
+      />
       <h1 className="text-[#dcd8d8] text-xl font-semibold text-center">
         EScraper
       </h1>
