@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "EScraper",
+    "version": "1.0",
+    "description": "Scrape emails from Horde Webmail",
+    "permissions": ["activeTab", "scripting", "storage", "downloads", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "vite.svg",
+        "48": "vite.svg",
+        "128": "vite.svg"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
